@@ -1,9 +1,11 @@
 <!DOCTYPE html>
     <head>
+        <meta charset="UTF-8">
+        <title>buzyk4.dev</title>
         <link rel="stylesheet" href="style.css">
         <script src="/script.js" async></script>
     </head>
-    <body>
+    <body onload="init();">
         <main class="content">
             <div class="nav-top">
                 <a class="nav-top-title"><h1>buzyk4.dev</h1></a>
@@ -15,6 +17,21 @@
                     </ul>
                 </nav>
             </div>
+            <div class="logo">
+                <canvas id="canvas" width="430px" height="" style="display:block; margin:0 auto;"></canvas>
+                <div class="logo-front">
+                    <h2 id="promo-welcome">Frontend Developer</h2>
+                    <p id="hello-text">Hello World!</p>
+                </div>
+            </div>
+            <br>
+            <section class="projects">
+                <div class="projects-btns">
+                    <a id="animePage-link" href="http://shiroanime.pl/">AnimePage</a>
+                    <a id="game" href="/#"> SecondProject</a>
+                    <a id="secondPage" href="/#"> ThirdProject</a>
+                </div>
+            </section>
         </main>
     </body>
 </html>
