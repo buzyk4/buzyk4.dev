@@ -71,10 +71,10 @@ body
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-self: center;
     position:relative;
-    width: 100%;
+    width: 80%;
     height: 20em;
 }
 #canvas
@@ -82,7 +82,7 @@ body
     position:absolute;
     z-index: -1;
     box-shadow: #370617 0px 0px 30px 15px;
-    border-radius: 2em;
+    border-radius: 16px;
 }
 .logo-front
 {
@@ -116,6 +116,10 @@ body
 {
     text-align: center;
 }
+#project > p 
+{
+    color: rgba(151, 148, 148, 0.753);
+}
 #project a
 {
     text-decoration: none;
@@ -132,7 +136,7 @@ body
     align-items: center;
     width:100%;
 }
-.project-btn
+.project-tile
 {
     display: flex;
     gap:4em;
@@ -148,31 +152,98 @@ body
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background: linear-gradient(1deg,#dc2f02  10%,transparent 10%);
-    height: 16.5em;
-    width: 16.5em;
-    padding: 1.2em;
+    background: linear-gradient(0deg,#dc2f02  10%, transparent 10%);
+    height: 30em;
+    width: 25em;
+
 }
-.pro-btn
+.pro-tile
 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     color: aliceblue;
     font-weight: 600;
     font-size: 18px;
     background-color:  #370617;
     border: 2px solid rgba(134, 24, 24, 0.3);
-    height: 15em;
-    width: 15em;
+    height: 95%;
+    width: 95%;
     border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-    transition: 1s;
-    transform: scale(1.1)
+    transition: 0.5s;
+    transform: scale(1.02)
 }
-.pro-btn:hover
+.pro-tile:hover
 {
     transform: scale(1)
+}
+.pro-tile > *
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.project-title
+{
+    text-align: center;
+    font-size: 1.4em;
+    height: 20%
+}
+.framework-list
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+}
+.framework-list > p
+{
+    width: 100%;
+}
+.framework-list > li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width : 4em;
+    font-size: 14px;
+}
+.framework-list img
+{
+    width: 50px;
+    height: 50px;
+}
+.goTo-project
+{
+    height: 10%;
+    width: 35%;
+    border-radius: 25px;;
+    color: aliceblue;
+    background-color: #dc2f02;
+    transition: 0.5s;
+    border: none;
+    font-size: 1em;
+}
+.goTo-project:hover
+{
+    cursor: pointer;
+    background-color: #9d0208;
+}
+#me
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .info
 {
@@ -193,7 +264,7 @@ body
 .info img
 {
     border-radius: 30px;
-    box-shadow: #4895ef 0px 0px 5px 5px;
+    box-shadow: #370617 0px 0px 30px 15px;
 }
 #alert-for-me
 {
@@ -211,7 +282,7 @@ body
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    transition: 1s;
+    transition: 0.5s;
 }
 #hidden-aboutMe:hover
 {
@@ -224,10 +295,42 @@ footer
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 220px;
+    background-image: linear-gradient(to top, #03071e 5%, transparent 125%),
+    url(/images/wawes.svg);
+    background-size: cover;
+    background-position: bottom
 }
 .bottom-btn-list
 {
     display: flex;
     justify-content: space-around;
     width: 50%;
+    list-style: none;
+}
+#bottom-title
+{
+    font-size: 2em;
+}
+.bottom-link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    padding: 0 10px;
+    height: 2em;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+.bottom-link:hover
+{
+    color:#dc2f02;
+    transform: scale(1.1)
 }
