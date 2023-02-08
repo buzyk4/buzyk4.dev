@@ -1,6 +1,6 @@
-var tileSize = 15;
+var tileSize = 12;
 // a higher fade factor will make the characters fade quicker
-var fadeFactor = 0.30;
+var fadeFactor = 0.20;
 
 var canvas;
 var ctx;
@@ -41,16 +41,16 @@ function initMatrix()
 function draw()
 {
     // draw a semi transparent black rectangle on top of the scene to slowly fade older characters
-    ctx.fillStyle = "rgba( 0 , 0 , 0 , "+fadeFactor+" )";
-    ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
+    ctx.fillStyle = "rgb(3, 7, 30,"+fadeFactor+")";
+    ctx.fillRect( 0 , 0, canvas.width , canvas.height );
 
     // pick a font slightly smaller than the tile size
     ctx.font = (tileSize-2)+"px monospace";
-    ctx.fillStyle = "rgb( 0 , 255 , 0 )";
+    ctx.fillStyle = "rgb(244, 141, 6)";
     for ( let i = 0 ; i < columns.length ; ++i )
     {
         // pick a random ascii character (change the 94 to a higher number to include more characters)
-        var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
+        var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*100) );
         ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
 
         // if the stack is at its height limit, pick a new random height and reset the counter
