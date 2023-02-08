@@ -12,16 +12,16 @@
                 <a class="nav-top-title"><h1>buzyk4.dev</h1></a>
                 <nav class="nav-top-list-wrap">
                     <ul class="nav-top-btn-list">
-                        <li class="topNaw-btn about">About</li>
+                        <li class="topNaw-btn about"><a>About</a></li>
                         <li class="topNaw-btn github"><a href="https://github.com/buzyk4">GitHub</a></li>
-                        <li class="topNaw-btn contact">Contact</li>
+                        <li class="topNaw-btn contact"><a>Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="logo">
                 <div class="logo-front">
-                    <canvas id="canvas" width="450px" height="180px" style="display:block;"></canvas>
-                    <h2 id="promo-welcome">Frontend Developer</h2>
+                    <canvas id="canvas" width="450px" height="180px"  style="display:flex;"></canvas>
+                    <h2 id="promo-welcome">Frontend <span id="role">Developer</span></h2>
                     <p id="hello-text">Hello World!</p>
                 </div>
                 <p id="admission">
@@ -30,12 +30,19 @@
                 </p>
             </div>
             <section id="project">
-                <p id="alert">Chect out my Projects:</p>
+                <h3 id="alert">Chect out my Projects:</h3>
+                <p>visit my <a href="https://github.com/buzyk4">GitHub</a> to see more</p>
                 <div id="project-container">
                     <div class="project-btn">
-                        <a class="pro-btn" id="animePage-link" href="http://shiroanime.pl/">AnimePage</a>
-                        <a class="pro-btn" id="game" href="#/"> SecondProject</a>
-                        <a class="pro-btn" id="secondPage" href="#/"> ThirdProject</a>
+                        <div class="lieGrd-border">
+                            <div class="pro-btn" id="animePage-link" href="http://shiroanime.pl/">AnimePage</div>
+                        </div>
+                        <div class="lieGrd-border">
+                            <div class="pro-btn" id="game" href="#/"> SecondProject</div>
+                        </div>
+                        <div class="lieGrd-border">
+                            <div class="pro-btn" id="secondPage" href="#/"> ThirdProject</div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -43,13 +50,20 @@
                 <div class="info">
                     <img src="/images/portret-xd.jpg">
                     <div class="view-more">
-                        <h3 id="alert-for-me">More about me:</h3>
-                        <p>click button for more information</p>
-                        <a class="show-more-info" href="#/">About me</a>
+                        <h3 id="alert-for-me">More about me</h3>
+                        <p>Click the button below for more.</p>
+                        <div Id="hidden-aboutMe"><p>About me</p></div>
                     </div>
                 </div>
             </section>
-            <br>
+            <footer>
+                <h4>buzyk4.dev</h4>
+                <ul class="bottom-btn-list">
+                    <li>About</li>
+                    <li>GitHub</li>
+                    <li>Contact</li>
+                </ul>
+            </footer>
         </main>
     </body>
 </html>
