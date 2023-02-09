@@ -27,9 +27,10 @@ body
     width: 20%;
     text-align: center;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.5em;
     transition: 0.5s;
+    color: aliceblue;
 }
 .nav-top-title:hover
 {
@@ -70,12 +71,11 @@ body
 .logo
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-self: center;
+    flex-wrap: wrap;
     position:relative;
     width: 80%;
-    height: 20em;
 }
 #canvas
 {
@@ -102,19 +102,20 @@ body
 #hello-text
 {
     margin-top: 10px;
-    width: 450px;
+    width: 100%;
     font-size: 20px;
 }
 #admission
 {
     text-align: center;
     font-size: large;
-    width: 30%;
+    width: 40%;
     height: 20%;
 }
 #project
 {
     text-align: center;
+    margin: 200px 0 0 0;
 }
 #project > p 
 {
@@ -245,6 +246,34 @@ body
     justify-content: space-around;
     align-items: center;
 }
+.my-idea
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);   
+}
+.funny-text
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.funny-text > p
+{
+    padding: 10px;
+}
+.funny-text img
+{
+    height: 30px
+}
 .info
 {
     display:flex;
@@ -311,6 +340,14 @@ footer
 #bottom-title
 {
     font-size: 2em;
+    text-decoration: none;
+    color:aliceblue;
+    transition: 0.5s;
+}
+#bottom-title:hover
+{
+    transform: scale(1.2);
+    color: #dc2f02;
 }
 .bottom-link
 {
@@ -331,6 +368,14 @@ footer
 }
 .bottom-link:hover
 {
-    color:#dc2f02;
     transform: scale(1.1)
+}
+.bottom-link > a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+.bottom-link > a:hover
+{
+    color: #dc2f02;
 }
