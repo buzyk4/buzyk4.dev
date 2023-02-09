@@ -76,6 +76,7 @@ body
     position:relative;
     width: 80%;
     height: 400px;
+    
 }
 #canvas
 {
@@ -106,29 +107,26 @@ body
     height: 100%;
     font-size: 20px;
 }
-#admission
+#logo-background
 {
+    transform: rotate(180deg);
     z-index: -1;
     position: absolute;
-
-    margin-left: 30%;
-    
-    display: flex;
-    justify-content: center;
-    font-size: large;
+    margin-left: 13%;
     width: 80%;
-    height: 285%;
-    background-image: linear-gradient(to top,  #03071e 10%, transparent 80%),
-    url(/images/napkin-background.svg.svg);
+    height: 220%;
+    background-image: linear-gradient(to bottom,  #03071e 10%, transparent 80%),
+    url(/images/dottet-wave.svg.svg);
     background-size: cover;
-    background-position:center;
+    background-position: top;
 }
 #admission-text
 {
-    margin-top: 20%;
+    display: flex;
+    margin: 10% 0 0 20%;
     font-size: 1.5em;
     text-align: center;
-    width: 50%
+    width: 40%
 }
 #project
 {
