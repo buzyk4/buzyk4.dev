@@ -6,11 +6,61 @@ body
 }
 .content
 {
+    position: relative;
     color: aliceblue;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: min(10rem,5vh);
+}
+.menu-open-btn
+{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    z-index: 1;
+}
+.side-menu
+{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    display:flex;
+    background-color: #37061765;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.opened
+{
+    width: 9%;
+}
+.opened .menu-open-btn
+{
+    margin-left: 84%;
+}
+.menu-link
+{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    width: 9%;
+    transition: 3s;
+    background-color: #370617;
+}
+.menu-link > li
+{
+    padding: 5em 0 5em 0;
+}
+.opened-ul
+{
+    height: 100%;
+    position: fixed;
 }
 .nav-top
 {
@@ -107,7 +157,7 @@ body
     height: 100%;
     font-size: 20px;
 }
-#logo-background
+.logo-background
 {
     transform: rotate(180deg);
     z-index: -1;
@@ -116,9 +166,10 @@ body
     width: 80%;
     height: 220%;
     background-image: linear-gradient(to bottom,  #03071e 10%, transparent 80%),
-    url(/images/dottet-wave.svg.svg);
+    url(/images/dotted-wave.svg.svg);
     background-size: cover;
     background-position: top;
+
 }
 #admission-text
 {
@@ -341,7 +392,7 @@ footer
     align-items: center;
     height: 220px;
     background-image: linear-gradient(to top, #03071e 5%, transparent 125%),
-    url(/images/wawes.svg);
+    url(/images/waves.svg);
     background-size: cover;
     background-position: bottom
 }
