@@ -251,8 +251,7 @@ body
     margin-left: 13%;
     width: 80%;
     height: 220%;
-    background-image: linear-gradient(to bottom,  #03071e 10%, transparent 80%),
-    url(/images/dotted-wave.svg.svg);
+    background-image: linear-gradient(to bottom,  #03071e 10%, transparent 80%), url(/images/dotted-wave.svg);
     background-size: cover;
     background-position: top;
 
@@ -477,8 +476,7 @@ footer
     justify-content: center;
     align-items: center;
     height: 220px;
-    background-image: linear-gradient(to top, #03071e 5%, transparent 125%),
-    url(/images/waves.svg);
+    background-image: linear-gradient(to top, #03071e 5%, transparent 125%), url(/images/waves.svg);
     background-size: cover;
     background-position: bottom
 }
