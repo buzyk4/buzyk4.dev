@@ -207,11 +207,13 @@ body
 .logo
 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-self: center;
+    align-items: center;
     position:relative;
+    flex-wrap: wrap;
     width: 80%;
-    height: 400px;
+    height: 20em;
     
 }
 #canvas
@@ -248,18 +250,16 @@ body
     transform: rotate(180deg);
     z-index: -1;
     position: absolute;
-    margin-left: 13%;
-    width: 80%;
-    height: 220%;
+    width: 100%;
+    height: 200%;
     background-image: linear-gradient(to bottom,  #03071e 10%, transparent 80%), url(/images/dotted-wave.svg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
 
 }
 #admission-text
 {
     display: flex;
-    margin: 10% 0 0 20%;
     font-size: 1.5em;
     text-align: center;
     width: 40%
@@ -528,4 +528,13 @@ footer
 .bottom-link > a:hover
 {
     color: #dc2f02;
+}
+
+.colorRed
+{
+    color: red;
+}
+.colorBlue
+{
+    color: blue;
 }
