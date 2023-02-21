@@ -156,6 +156,49 @@ body
 {
     transform: scale(1.2);
 }
+
+.popup
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+.is-active
+{
+    opacity: 1;
+    pointer-events: all;
+}
+.popup-overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.19);;
+}
+.popup-inner
+{
+    position: relative;
+    z-index: 1;
+    max-width: 60%;
+    height: 60%;
+    padding: 50px 30px;
+    background-color: #03071e;
+    border-radius: 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
 .nav-top
 {
     width: 80%;
@@ -218,10 +261,10 @@ body
     justify-content: space-around;
     align-self: center;
     align-items: center;
-    position:relative;
+    position: relative;
     flex-wrap: wrap;
     width: 80%;
-    height: 20em;
+    height: 40em;
     
 }
 #canvas
@@ -275,6 +318,7 @@ body
 #project
 {
     text-align: center;
+    min-height: 100vh;
 }
 #project > p 
 {
@@ -404,6 +448,7 @@ body
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 50vh
 }
 .my-idea
 {

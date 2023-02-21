@@ -1,4 +1,3 @@
-
 // Side menu buttons 
 
 document.querySelector('.burger-button').addEventListener('click', function () {
@@ -6,11 +5,17 @@ document.querySelector('.burger-button').addEventListener('click', function () {
     document.querySelector('.menu-container').classList.toggle('open');
 });
 
-//test
+function popupFunction() {
+    const popup_btns = document.querySelectorAll('.popup-button');
 
-function changeColor(color)
-{
-    var text = document.getElementById('test');
-    
-    text.style.color = color
+    popup_btns.forEach(button => {
+        button.addEventListener('click', e => {
+            const target = e.target.dataset.target;
+
+            const popup_el = document.querySelector(target);
+            if (popup_el != null) {
+                popup_el.classList.toggle('is-active');
+            }
+        })
+    })
 }

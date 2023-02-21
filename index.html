@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style/style.css">
         <script src="js/script.js" async></script>
     </head>
-    <body onload="init();">
+    <body onload="init(); popupFunction()">
         <main class="content">
             <section class="side-menu">
                 <div class="menu-container">
@@ -18,16 +18,47 @@
                         </div>
                     </nav>
                     <div class="links">
-                        <ul>
+                        <ul class="page">
                             <li><a>GitHub</a></li>
-                            <li><a>About Me</a></li>
-                            <li><a href="/skills.html">Skills</a></li>
                             <li><a>Linked In</a></li>
-                            <li><a>Projects</a></li>
+                            <li><a class="button popup-button" data-target="#popup-skills">Skills</a></li>
+                            <li><a class="button popup-button" data-target="#popup-projects">Projects</a></li>
+                            <li><a class="button popup-button" data-target="#popup-aboutMe">About Me</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
+
+            <div class="popup" id="popup-skills">
+                <div class="popup-overlay"></div>
+                <div class="popup-inner">
+                    <h2>Skills main title</h2>
+                    <h3>main subtitle</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet laboriosam est sunt! Vel praesentium libero ullam optio porro? Pariatur ea dignissimos vero eligendi delectus molestiae sequi dolores architecto officia id?</p>
+                    <button class="button popup-button" data-target="#popup-skills">Close</button>
+                </div>
+            </div>
+
+            <div class="popup" id="popup-projects">
+                <div class="popup-overlay"></div>
+                <div class="popup-inner">
+                    <h2>Projects main title</h2>
+                    <h3>main subtitle</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet laboriosam est sunt! Vel praesentium libero ullam optio porro? Pariatur ea dignissimos vero eligendi delectus molestiae sequi dolores architecto officia id?</p>
+                    <button class="button popup-button" data-target="#popup-projects">Close</button>
+                </div>
+            </div>
+
+            <div class="popup" id="popup-aboutMe">
+                <div class="popup-overlay"></div>
+                <div class="popup-inner">
+                    <h2>About Me main title</h2>
+                    <h3>main subtitle</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet laboriosam est sunt! Vel praesentium libero ullam optio porro? Pariatur ea dignissimos vero eligendi delectus molestiae sequi dolores architecto officia id?</p>
+                    <button class="button popup-button" data-target="#popup-aboutMe">Close</button>
+                </div>
+            </div>
+
             <div class="nav-top">
                 <a class="nav-top-title" href="index.html"><h1>buzyk4.dev</h1></a>
                 <nav class="nav-top-list-wrap">
@@ -115,12 +146,6 @@
                     </div>
                 </div>
             </section>
-            <div>
-                <p id="test">tekst testowy</p>
-                <button id="btn1" onclick="changeColor('red')">Red</button>
-                <button id="btn2" onclick="changeColor('blue')">Blue</button>
-
-            </div>
             <footer>
                 <a id="bottom-title" href="index.html"><h4>buzyk4.dev</h4></a>
                 <ul class="bottom-btn-list">
