@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>buzyk4.dev</title>
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style.css">
         <script src="js/script.js" async></script>
     </head>
     <body onload="init(); popupFunction()">
@@ -19,11 +19,11 @@
                     </nav>
                     <div class="links">
                         <ul class="page">
-                            <li><a>GitHub</a></li>
-                            <li><a>Linked In</a></li>
-                            <li><a class="button popup-button" data-target="#popup-skills">Skills</a></li>
-                            <li><a class="button popup-button" data-target="#popup-projects">Projects</a></li>
-                            <li><a class="button popup-button" data-target="#popup-aboutMe">About Me</a></li>
+                            <li class="basic-btn"><a>GitHub</a></li>
+                            <li class="basic-btn"><a>Linked In</a></li>
+                            <li class="basic-btn"><a class="button popup-button" data-target="#popup-skills">Skills</a></li>
+                            <li class="basic-btn"><a class="button popup-button" data-target="#popup-projects">Projects</a></li>
+                            <li class="basic-btn"><a class="button popup-button" data-target="#popup-aboutMe">About Me</a></li>
                         </ul>
                     </div>
                 </div>
@@ -32,10 +32,14 @@
             <div class="popup" id="popup-skills">
                 <div class="popup-overlay"></div>
                 <div class="popup-inner">
-                    <h2>Skills main title</h2>
-                    <h3>main subtitle</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet laboriosam est sunt! Vel praesentium libero ullam optio porro? Pariatur ea dignissimos vero eligendi delectus molestiae sequi dolores architecto officia id?</p>
-                    <button class="button popup-button" data-target="#popup-skills">Close</button>
+                    <h2>Skills</h2>
+                    <h3>Tools & Technologies</h3>
+                    <div>
+                        <p>HTML - advanced</p>
+                        <p>CSS - advanced</p>
+                        <p>JavaScript - basic</p>
+                    </div>
+                    <button class="close-btn popup-button" data-target="#popup-skills">Close</button>
                 </div>
             </div>
 
@@ -45,7 +49,7 @@
                     <h2>Projects main title</h2>
                     <h3>main subtitle</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet laboriosam est sunt! Vel praesentium libero ullam optio porro? Pariatur ea dignissimos vero eligendi delectus molestiae sequi dolores architecto officia id?</p>
-                    <button class="button popup-button" data-target="#popup-projects">Close</button>
+                    <button class="basic-btn popup-button" data-target="#popup-projects">Close</button>
                 </div>
             </div>
 
@@ -55,7 +59,7 @@
                     <h2>About Me main title</h2>
                     <h3>main subtitle</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet laboriosam est sunt! Vel praesentium libero ullam optio porro? Pariatur ea dignissimos vero eligendi delectus molestiae sequi dolores architecto officia id?</p>
-                    <button class="button popup-button" data-target="#popup-aboutMe">Close</button>
+                    <button class="basic-btn popup-button" data-target="#popup-aboutMe">Close</button>
                 </div>
             </div>
 

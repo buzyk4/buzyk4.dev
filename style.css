@@ -131,7 +131,7 @@ body
     list-style: none;
     padding: 0;
 }
-.links li
+.links .basic-btn
 {
     display: flex;
     align-items: center;
@@ -152,9 +152,13 @@ body
     color:aliceblue;
     text-decoration: none;
 }
-.links li:hover
+.basic-btn:hover
 {
     transform: scale(1.2);
+}
+.basic-btn:hover > a
+{
+    color: #dc2f02;
 }
 
 .popup
@@ -170,7 +174,7 @@ body
     align-items: center;
     opacity: 0;
     pointer-events: none;
-    transition: 1s;
+    transition: 0.5s;
 }
 .is-active
 {
@@ -185,20 +189,53 @@ body
     right: 0;
     left: 0;
     z-index: 0;
-    background-color: rgba(255, 255, 255, 0.19);;
+    background-color:  rgba(255, 255, 255, 0.19);
 }
 .popup-inner
 {
     position: relative;
     z-index: 1;
-    max-width: 60%;
+    width: 60%;
     height: 60%;
-    padding: 50px 30px;
+    padding: 30px 20px;
+
     background-color: #03071e;
+    background-image: linear-gradient(to top,  #03071e 10%, transparent 30%), url(/images/waves.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     border-radius: 16px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-}
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.close-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    height: 2em;
+    color: aliceblue;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+.close-btn:hover
+{
+    transform: scale(1.1);
+    color:#dc2f02;
+}
 .nav-top
 {
     width: 80%;
@@ -298,14 +335,14 @@ body
 }
 .logo-background
 {
-    transform: rotate(180deg);
+    transform: scale(-1);
     z-index: -1;
     position: absolute;
     width: 100%;
     height: 200%;
     background-image: linear-gradient(to bottom,  #03071e 10%, transparent 50%), url(/images/dotted-wave.svg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 
 }
 #admission-text
