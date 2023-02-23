@@ -1,0 +1,20 @@
+.logo
+{
+    flex-direction: column;
+}
+.me
+{
+    flex-direction: column;
+}
+.menu-container
+{
+    width: 15%;
+}
+.menu-container.open
+{
+    z-index: 10;
+}
+.project-tile
+{
+    gap: 15em
+}
