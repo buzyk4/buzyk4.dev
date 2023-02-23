@@ -19,7 +19,7 @@ body
 }
 .menu-container
 {
-    width: 8%;
+    width: 10%;
     height: 100%;
     background-image: linear-gradient(70deg, #9d0207c4, #370617c4);
     position: fixed;
@@ -248,7 +248,7 @@ body
 }
 .nav-top-title
 {
-    width: 20%;
+    width: fit-content;
     text-align: center;
     text-decoration: none;
     font-weight: 600;
@@ -264,9 +264,8 @@ body
 }
 .nav-top-list-wrap
 {
-    width: 80%;
+    width: fit-content;
     text-align: center;
-    flex:  1 1
 }
 .nav-top-btn-list
 {
@@ -299,7 +298,6 @@ body
     align-self: center;
     align-items: center;
     position: relative;
-    flex-wrap: wrap;
     width: 80%;
     height: 40em;
     
@@ -361,7 +359,7 @@ body
 {
     color: rgba(151, 148, 148, 0.753);
 }
-#project a
+#project #github-projects
 {
     text-decoration: none;
     color: rgb(244, 141, 6);
@@ -429,14 +427,14 @@ body
 {
     text-align: center;
     font-size: 1.4em;
-    height: 20%
+    height: 10%
 }
 .framework-list
 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 60%;
+    height: 70%;
     width: 90%;
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
@@ -446,44 +444,44 @@ body
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 20px;
 }
-.framework-list > p
-{
-    width: 100%;
-}
-.framework-list > li
+.framework
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
-    width : 4em;
-    font-size: 14px;
+    width: 33%;
 }
 .framework-list img
 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .goTo-project
 {
-    height: 10%;
-    width: 35%;
-    border-radius: 25px;;
-    color: aliceblue;
+    display: flex;
+    height: 2em;
+    cursor: pointer;
+    width: 6em;
+    border-radius: 15px;
     background-color: #dc2f02;
+    color: aliceblue;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
     transition: 0.5s;
-    border: none;
-    font-size: 1em;
 }
 .goTo-project:hover
 {
     cursor: pointer;
     background-color: #9d0208;
+    transform: scale(1.1);
 }
-#me
+.me
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 5em 0 5em;
     align-items: center;
     min-height: 50vh
 }

@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>buzyk4.dev</title>
-        <link rel="stylesheet" href="style.css">
+        <link  href="style.css" rel="stylesheet" type="text/css">
+        <link  href="mobile.css" rel="stylesheet" media="(max-width: 1250px)" type="text/css">
         <script src="js/script.js" async></script>
     </head>
-    <body onload="init(); popupFunction()">
+    <body onload="init(); mainInit()">
         <main class="content">
             <section class="side-menu">
                 <div class="menu-container">
@@ -19,8 +20,8 @@
                     </nav>
                     <div class="links">
                         <ul class="page">
-                            <li class="basic-btn"><a>GitHub</a></li>
-                            <li class="basic-btn"><a>Linked In</a></li>
+                            <li class="basic-btn"><a href="https://github.com/buzyk4">GitHub</a></li>
+                            <li class="basic-btn"><a href="https://www.linkedin.com/in/arkadiusz-buż-9737bb263/">Linked In</a></li>
                             <li class="basic-btn"><a class="button popup-button" data-target="#popup-skills">Skills</a></li>
                             <li class="basic-btn"><a class="button popup-button" data-target="#popup-projects">Projects</a></li>
                             <li class="basic-btn"><a class="button popup-button" data-target="#popup-aboutMe">About Me</a></li>
@@ -90,49 +91,58 @@
             </div>
             <section id="project">
                 <h3 id="alert">Check out my Projects:</h3>
-                <p>visit my <a href="https://github.com/buzyk4">GitHub</a> to see more</p>
+                <p>visit my <a id="github-projects" href="https://github.com/buzyk4">GitHub</a> to see more</p>
                 <div id="project-container">
                     <div class="project-tile">
                         <div class="lieGrd-border">
                             <div class="pro-tile">
                                 <h4 class="project-title">Shiro 城</h4>
+                                <p>Frameworks:</p>
                                 <ul class="framework-list">
-                                    <p>Frameworks:</p>
-                                    <li>HTML<img src="images/html-icon.png"></li>
-                                    <li>CSS<img src="images/css-icon.png"></li>
-                                    <li>JAVA SCRIPT<img src="images/java-script.png"></li>
+                                    <li class="framework">
+                                        <p>HTML</p>
+                                        <img src="images/html-icon.png">
+                                    </li>
+                                    <li class="framework">
+                                        <p>CSS</p>
+                                        <img src="images/css-icon.png">
+                                    </li>
+                                    <li class="framework">
+                                        <p>JavaScript</p>
+                                        <img src="images/java-script.png">
+                                    </li>
                                 </ul>
-                                <button class="goTo-project" href="http://shiroanime.pl">Check out</button>
+                                <a class="goTo-project" href="http://shiroanime.pl">Check out</a>
                             </div>
                         </div>
                         <div class="lieGrd-border">
                             <div class="pro-tile">
-                                <h4 class="project-title">Second Project</h4>
+                                <h4 class="project-title">In Progress...</h4>
+                                <p>Frameworks:</p>
                                 <ul class="framework-list">
-                                    <p>Frameworks:</p>
-                                    <li><img src=""></li>
-                                    <li><img src=""></li>
-                                    <li><img src=""></li>
+                                    <li class="framework"></li>
+                                    <li class="framework"></li>
+                                    <li class="framework"></li>
                                 </ul>
-                                <button class="goTo-project" href="http://shiroanime.pl">Check out</button>
+                                <a class="goTo-project" href="http://shiroanime.pl">Check out</a>
                             </div>
                         </div>
                         <div class="lieGrd-border">
                             <div class="pro-tile">
-                                <h4 class="project-title">Third Project</h4>
+                                <h4 class="project-title">In Progress...</h4>
+                                <p>Frameworks:</p>
                                 <ul class="framework-list">
-                                    <p>Frameworks:</p>
-                                    <li><img src=""></li>
-                                    <li><img src=""></li>
-                                    <li><img src=""></li>
+                                    <li class="framework"></li>
+                                    <li class="framework"></li>
+                                    <li class="framework"></li>
                                 </ul>
-                                <button class="goTo-project" href="http://shiroanime.pl">Check out</button>
+                                <a class="goTo-project" href="http://shiroanime.pl">Check out</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="me">
+            <section class="me">
                 <div class="my-idea">
                     <h2>What is my motivation?</h2>
                     <div class="funny-text">
@@ -146,7 +156,7 @@
                     <div class="view-more">
                         <h3 id="alert-for-me">More about me</h3>
                         <p>Click the button below for more.</p>
-                        <div Id="hidden-aboutMe"><p>About me</p></div>
+                        <div Id="hidden-aboutMe"><a class="popup-button" data-target="#popup-aboutMe">About me</a></div>
                     </div>
                 </div>
             </section>
