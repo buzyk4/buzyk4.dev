@@ -1,3 +1,10 @@
+// Function for window.onload content
+
+function mainInit() {
+
+    popupFunction()
+}
+
 // Side menu buttons 
 
 document.querySelector('.burger-button').addEventListener('click', function () {
