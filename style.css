@@ -147,10 +147,13 @@ body
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 0.5s;
 }
-.links li > a
+.basic-btn > a
 {
+    text-align: center;
     color:aliceblue;
     text-decoration: none;
+    width: 100%;
+    padding: 7px 0;
 }
 .basic-btn:hover
 {
@@ -189,7 +192,7 @@ body
     right: 0;
     left: 0;
     z-index: 0;
-    background-color:  rgba(255, 255, 255, 0.19);
+    background-color:  rgba(255, 255, 255, 0.089);
 }
 .popup-inner
 {
@@ -212,7 +215,19 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+}
+.skills-panel
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 30%;
+}
+.skills-list
+{
+    width: 15em;
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 .close-btn
 {
@@ -390,7 +405,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 1em;
     background: linear-gradient(0deg,#dc2f02  10%, transparent 10%);
     height: 30em;
     width: 25em;
@@ -403,19 +418,18 @@ body
     align-items: center;
     text-decoration: none;
     color: aliceblue;
-    font-weight: 600;
-    font-size: 18px;
-    background-color:  #370617;
-    border: 2px solid rgba(134, 24, 24, 0.3);
-    height: 95%;
-    width: 95%;
-    border-radius: 15px;
+    font-size: 1em;
+    background: linear-gradient(60deg, #46081d , #20030e);
+    border: 1px solid rgba(134, 24, 24, 0.3);
+    height: 98%;
+    width: 98%;
+    border-radius: 1em;
     transition: 0.5s;
-    transform: scale(1.02)
+
 }
 .pro-tile:hover
 {
-    transform: scale(1)
+    background: linear-gradient(60deg, #46081d  , #380315);
 }
 .pro-tile > *
 {
@@ -425,24 +439,28 @@ body
 }
 .project-title
 {
-    text-align: center;
     font-size: 1.4em;
-    height: 10%
+    height: 1.6em;
+    padding-top: 0.4em;
+}
+.project-info
+{
+    height: 20.625em;
+    width: 22.125em;
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
 }
 .framework-list
 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 70%;
-    width: 90%;
-    background: rgba(255, 255, 255, 0.19);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.4px);
-    -webkit-backdrop-filter: blur(5.4px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-bottom: 20px;
+    padding: 0;
 }
 .framework
 {
@@ -454,8 +472,8 @@ body
 }
 .framework-list img
 {
-    width: 40px;
-    height: 40px;
+    width: 3rem;
+    height: 3rem;
 }
 .goTo-project
 {
@@ -491,6 +509,7 @@ body
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    z-index: -1;
     padding: 5px 15px;
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
