@@ -32,7 +32,8 @@ body
 }
 .menu-container.open .burger-button
 {
-    margin-left: 75%;
+    margin-left: 80%;
+    padding: 0px;
 }
 .burger-button
 {
