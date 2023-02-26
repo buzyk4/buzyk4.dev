@@ -497,44 +497,17 @@ body
 .me
 {
     display: flex;
-    justify-content: space-between;
-    padding: 0 5em 0 5em;
-    align-items: center;
-    min-height: 50vh
-}
-.my-idea
-{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    z-index: -1;
-    padding: 5px 15px;
-    background: rgba(255, 255, 255, 0.19);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.4px);
-    -webkit-backdrop-filter: blur(5.4px);
-    border: 1px solid rgba(255, 255, 255, 0.3);   
-}
-.funny-text
-{
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-.funny-text > p
-{
-    padding: 10px;
-}
-.funny-text img
-{
-    height: 30px
+    height: 50vh
 }
 .info
 {
+    height: 80%;
+    width: 80%;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .view-more
 {
@@ -543,25 +516,29 @@ body
     align-items: center;
     padding: 0 20px 10px;
     text-align: center;
-    height: 10em;
     width: 20em;
-
+    height: fit-content;
 }
-.info img
+.card
 {
-    border-radius: 30px;
-    box-shadow: #370617 0px 0px 30px 15px;
-}
-#alert-for-me
-{
-    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 15em;
+    width: 20em;
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #hidden-aboutMe
 {
     display: flex;
     height: 2em;
+    width: fit-content;
+    padding: 0 8px;
     cursor: pointer;
-    width: 6em;
     border-radius: 15px;
     background-color: #dc2f02;
     color: aliceblue;
@@ -575,6 +552,12 @@ body
     background-color: #9d0208;
     transform: scale(1.1);
 }
+
+.send-email
+{
+    height: 50vh;
+}
+
 footer
 {
     display: flex;
