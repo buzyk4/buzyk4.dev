@@ -21,11 +21,10 @@ body
     background-color:#03071e;
     font-family: Lato ,sans-serif;
     margin: 0px;
+    color: aliceblue;
 }
 .content
 {
-    position: relative;
-    color: aliceblue;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -366,13 +365,14 @@ body
 .logo-background
 {
     transform: scale(-1);
-    z-index: -1;
-    position: absolute;
+    z-index: -100;
+    position: fixed;
     width: 100%;
-    height: 200%;
+    height: 100%;
     background-image: linear-gradient(to bottom,  #03071e 10%, transparent 50%), url(/images/dotted-wave.svg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+    margin: 0 20% 20% 0;
 
 }
 #admission-text
@@ -406,6 +406,7 @@ body
     justify-content: center;
     align-items: center;
     width:100%;
+    margin: 20% 0;
 }
 .project-tile
 {
@@ -569,6 +570,11 @@ body
 {
     background-color: #9d0208;
     transform: scale(1.1);
+}
+.me-btns
+{
+    display: flex;
+    gap: 15px;
 }
 
 .send-email
