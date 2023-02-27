@@ -8,7 +8,18 @@
         <script src="js/script.js" async></script>
     </head>
     <body onload="init(); mainInit()">
-        <body class="content">
+        <main class="content">
+            <header class="nav-top">
+                <a class="nav-top-title" href="index.html"><h1>buzyk4.dev</h1></a>
+                <nav class="nav-top-list-wrap">
+                    <ul class="nav-top-btn-list">
+                        <li class="topNaw-btn about"><a>About</a></li>
+                        <li class="topNaw-btn github"><a href="https://github.com/buzyk4">GitHub</a></li>
+                        <li class="topNaw-btn contact"><a>Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="logo-background" class="logo-background"></div>
             <section class="side-menu">
                 <div class="menu-container">
                     <nav class="menu-bar">
@@ -78,16 +89,6 @@
                 </div>
             </div>
 
-            <div class="nav-top">
-                <a class="nav-top-title" href="index.html"><h1>buzyk4.dev</h1></a>
-                <nav class="nav-top-list-wrap">
-                    <ul class="nav-top-btn-list">
-                        <li class="topNaw-btn about"><a>About</a></li>
-                        <li class="topNaw-btn github"><a href="https://github.com/buzyk4">GitHub</a></li>
-                        <li class="topNaw-btn contact"><a>Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
             <div class="logo">
                 <div class="logo-front">
                     <canvas id="canvas" width="450px" height="150px"  style="display:flex;"></canvas>
@@ -98,11 +99,9 @@
                     Welcome to my website, Its my own made portfolio,
                     look around and find out something about me and my skills
                 </p>
-                <div id="logo-background" class="logo-background"></div>
             </div>
-            <div>
-                
-            </div>
+
+
             <section id="project">
                 <h3 id="alert">Check out my Projects:</h3>
                 <p>visit my <a id="github-projects" href="https://github.com/buzyk4">GitHub</a> to see more</p>
@@ -194,7 +193,10 @@
                             </div>
                         </div>
                         <br>
-                        <div Id="hidden-aboutMe"><a class="popup-button" data-target="#popup-aboutMe">Download CV</a></div>
+                        <div class="me-btns">
+                            <div Id="hidden-aboutMe"><a class="popup-button" data-target="#popup-aboutMe">Hire Me</a></div>
+                            <div Id="hidden-aboutMe"><a class="popup-button" data-target="#popup-aboutMe">Download CV</a></div>
+                        </div>
                     </div>
                 </div>
             </section>
