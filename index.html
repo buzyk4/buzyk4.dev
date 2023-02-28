@@ -15,7 +15,7 @@
                     <ul class="nav-top-btn-list">
                         <li class="topNaw-btn about"><a>About</a></li>
                         <li class="topNaw-btn github"><a href="https://github.com/buzyk4">GitHub</a></li>
-                        <li class="topNaw-btn contact"><a>Contact</a></li>
+                        <li class="topNaw-btn contact"><a href="#send-email">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -67,15 +67,15 @@
                                     <ul class="framework-list">
                                         <li class="framework">
                                             <p>HTML</p>
-                                            <img src="images/html-icon.png">
+                                            <img alt="HTML" src="images/html-icon.png">
                                         </li>
                                         <li class="framework">
                                             <p>CSS</p>
-                                            <img src="images/css-icon.png">
+                                            <img alt="CSS" src="images/css-icon.png">
                                         </li>
                                         <li class="framework">
                                             <p>JavaScript</p>
-                                            <img src="images/java-script.png">
+                                            <img alt="JavaScript" src="images/java-script.png">
                                         </li>
                                     </ul>
                                     <p>Description:</p>
@@ -152,9 +152,45 @@
                     </div>
                 </div>
             </section>
-            <section class="send-email">
+            <section id="skills-section">
+                <div class="skills">
+                    <h2>Check out my skills</h2>
+                    <div class="tools-tech">
+                        <ul class="skills-list">
+                            <h3>Tools & Technologies</h3>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                            <li>English</li>
+                            <li>VSC</li>
+                        </ul>
+                        <ul class="skills-list">
+                            <h3>In progress</h3>
+                            <li>React</li>
+                            <li>JQuery</li>
+                            <li>AJAX</li>
+                            <li>Application Cache</li>
+                            <li>SASS</li>
+                            <li>Grunt.js</li>
+                        </ul>
+                    </div>
+                
+            </section>
+            <section id="send-email">
                 <div>
-
+                    <h2>Contact Us</h2>
+                    <form method="post" action="#" onsubmit="sendEmail(event)">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" required></textarea><br><br>
+                        <input type="submit" value="Send">
+                    </form>
                 </div>
             </section>
             <footer>
@@ -162,7 +198,7 @@
                 <ul class="bottom-btn-list">
                     <li class="bottom-link"><a href="#/">About</a></li>
                     <li class="bottom-link"><a href="https://github.com/buzyk4">GitHub</a></li>
-                    <li class="bottom-link"><a href="#/">Contact</a></li>
+                    <li class="bottom-link"><a href="#send-email">Contact</a></li>
                 </ul>
             </footer>
         </main>
