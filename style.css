@@ -434,7 +434,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh
+    min-height: 100vh
 }
 .info
 {
@@ -491,6 +491,44 @@ body
 {
     display: flex;
     gap: 15px;
+}
+
+#skills-section
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.skills
+{
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+    margin: 15em 0 0 0;
+}
+.tools-tech
+{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+.skills-list
+{
+    padding: 0;
+    min-width: 15em;
+    width: 30%;
+    height: 20em;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.skills-list>li
+{
+    padding: 5px 0px;
 }
 
 .send-email
