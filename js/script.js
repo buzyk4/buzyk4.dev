@@ -26,3 +26,22 @@ function popupFunction() {
         })
     })
 }
+
+function sendEmail(event) {
+	event.preventDefault();
+
+	// Get the input values
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	var subject = document.getElementById("subject").value;
+	var message = document.getElementById("message").value;
+
+	// Create the email body
+	var body = "Name: " + name + "\r\n";
+	body += "Email: " + email + "\r\n";
+	body += "Subject: " + subject + "\r\n";
+	body += "Message: " + message;
+
+	// Send the email using the user's email client
+	window.location.href = "mailto:buzyka99@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+}
