@@ -554,9 +554,29 @@ body
     padding: 5px 0px;
 }
 
-.send-email
+#contact-section
 {
-    height: 50vh;
+    height: 100vh;
+    text-align: center;
+    margin: 0 20%;
+}
+.contact-container
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card
+{
+    width: 20em;
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
 footer
