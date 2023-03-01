@@ -27,25 +27,3 @@ function popupFunction() {
     })
 }
 
-const form = document.querySelector('#contact-form');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  
-  const name = form.querySelector('#name').value;
-  const email = form.querySelector('#email').value;
-  const message = form.querySelector('#message').value;
-
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', '/send-email');
-  xhr.setRequestHeader('Content-type', 'application/json');
-  xhr.onload = () => {
-    if (xhr.status === 200) {
-      alert('Email sent successfully!');
-      form.reset();
-    } else {
-      alert('There was a problem sending the email.');
-    }
-  };
-  xhr.send(JSON.stringify({ name, email, message }));
-});
