@@ -6,10 +6,6 @@
 {
     flex-direction: column;
 }
-.menu-container
-{
-    width: 15%;
-}
 .menu-container.open
 {
     z-index: 10;
