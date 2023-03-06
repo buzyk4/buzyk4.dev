@@ -1,6 +1,6 @@
 var tileSize = 12;
 // a higher fade factor will make the characters fade quicker
-var fadeFactor = 0.20;
+var fadeFactor = 0.4;
 
 var canvas;
 var ctx;
@@ -46,7 +46,7 @@ function draw()
 
     // pick a font slightly smaller than the tile size
     ctx.font = (tileSize-2)+"px monospace";
-    ctx.fillStyle = "rgb(244, 141, 6)";
+    ctx.fillStyle = "rgb(220, 47, 2)";
     for ( let i = 0 ; i < columns.length ; ++i )
     {
         // pick a random ascii character (change the 94 to a higher number to include more characters)
