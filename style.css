@@ -278,8 +278,9 @@ body
 {
     text-align: start;
     width: 9ch;
-    animation: typing 10s steps(9) infinite ;
+    animation: typing 10s steps(9) infinite;
     white-space: nowrap;
+    font-family: monospace ,sans-serif;
     overflow: hidden;
     border-right: 3px solid;
     color: #dc2f02;
@@ -533,13 +534,17 @@ body
     text-align: center;
     margin: 15em 0 0 0;
 }
+.skills-title
+{
+    margin-bottom: 5em;
+}
 .tools-tech
 {
     display: flex;
     justify-content: center;
-    gap: 20%;
+    gap: 10%;
 }
-.skills-list
+.glass
 {
     padding: 0;
     min-width: 15em;
@@ -553,9 +558,36 @@ body
     -webkit-backdrop-filter: blur(5.4px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.skills-list
+{
+    list-style: none;
+    min-width: 15em;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+}
 .skills-list>li
 {
-    padding: 5px 0px;
+    width: 8em;
+    min-height: fit-content;
+    background: linear-gradient(60deg, #46081d , #20030e);
+    border-radius: 16px;
+    border: 1px solid black;
+    cursor:default;
+    padding: 10px 0 10px 0;
+}
+.skills-list>li:hover
+{
+    background: linear-gradient(60deg, #46081d  , #380315);
+}
+.skills-list>li>p
+{
+    margin: 0;
 }
 
 #contact-section
