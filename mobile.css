@@ -18,3 +18,9 @@
 {
     height: 30%;
 }
+.contact-options-list
+{
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
