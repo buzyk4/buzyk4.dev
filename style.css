@@ -626,6 +626,8 @@ body
     border-radius: 30px;
     transition: 0.4;
     cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
 }
 .contact-option:hover
 {
